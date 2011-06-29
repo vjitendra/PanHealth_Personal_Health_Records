@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout 
+	 	xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent" 
+        android:layout_height="fill_parent"
+        android:padding="5px"
+        android:id="@+id/rLogin"
+    	android:background="@drawable/background_2"
+    	>
+
+	<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:id="@+id/l0"
+    android:paddingTop="10px"
+    android:gravity="right"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    >
+    	<Button 
+			android:id="@+id/back" 
+			android:layout_height="wrap_content" 
+			android:layout_width="wrap_content"
+			android:layout_gravity="right"
+			android:background="@drawable/back"
+			/> 
+	
+		
+		</LinearLayout>
+		<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:id="@+id/l11"
+    android:layout_below="@id/l0"
+    android:gravity="left"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    >	
+	<TextView  
+			android:id="@+id/userID"
+   	 		android:layout_width="wrap_content" 
+    		android:layout_height="wrap_content"
+    		android:textColor="#000000"
+    		/>      
+    
+</LinearLayout>	
+	<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:id="@+id/l10"
+    android:layout_below="@id/l11"
+    android:gravity="center_vertical|center_horizontal"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    >
+		<TextView  
+		android:id="@+id/name"
+		android:layout_width="wrap_content" 
+    	android:layout_height="wrap_content"
+    	android:textStyle="bold"
+    	android:textColor="#000000"
+    	android:textSize="15px"
+   	 	android:text="Select Option to Enter data:"
+    	/>
+   
+	</LinearLayout>	
+ 	<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:id="@+id/l1"
+    android:paddingTop="20px"
+    android:layout_below="@id/l10"
+    android:gravity="center_vertical|center_horizontal"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    >
+    <ImageButton
+    		android:id="@+id/glucose"
+    		android:layout_width="wrap_content"
+    		android:layout_height="wrap_content"
+    		android:background="@drawable/blood_glucose"
+    		/>
+    		<TextView  
+				android:id="@+id/name"
+				android:layout_width="10px" 
+    			android:layout_height="wrap_content"
+    		/>
+    		<!--<ImageButton
+    		android:id="@+id/pressure"
+    		android:layout_width="wrap_content"
+    		android:layout_height="wrap_content"
+    		android:background="@drawable/blood_pressure"
+    		/>
+    		--></LinearLayout>
+    		<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:id="@+id/l2"
+    android:paddingTop="10px"
+    android:layout_below="@id/l1"
+    android:gravity="center_vertical|center_horizontal"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    >
+    		<ImageButton
+    		android:id="@+id/weight"
+    		android:layout_width="wrap_content"
+    		android:layout_height="wrap_content"
+    		android:background="@drawable/weight"
+    		/>
+    		<TextView  
+				android:id="@+id/name"
+				android:layout_width="100px" 
+    			android:layout_height="wrap_content"
+    		/>
+    		<ImageButton
+    		android:id="@+id/pressure"
+    		android:layout_width="wrap_content"
+    		android:layout_height="wrap_content"
+    		android:background="@drawable/blood_pressure"
+    		/>
+    		<!--<ImageButton
+    		android:id="@+id/manual"
+    		android:paddingTop="50px"
+    		android:layout_width="wrap_content"
+    		android:layout_height="wrap_content"
+    		android:background="@drawable/medication"
+    		/>
+    		--></LinearLayout>
+    		<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:id="@+id/l3"
+    android:paddingTop="10px"
+    android:layout_below="@id/l2"
+    android:gravity="center_vertical|center_horizontal"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    >
+    		
+    		<ImageButton
+    		android:id="@+id/HbA1c"
+    		android:layout_width="wrap_content"
+    		android:layout_height="wrap_content"
+    		android:background="@drawable/hba1c"
+    		/>
+    		<TextView  
+				android:id="@+id/name"
+				android:layout_width="10px" 
+    			android:layout_height="wrap_content"
+    		/>
+    		<ImageButton
+    		android:id="@+id/hemoglobin"
+    		android:layout_width="wrap_content"
+    		android:layout_height="wrap_content"
+    		android:background="@drawable/haemoglobin1"
+    		/>
+    
+    </LinearLayout>
+    
+    </RelativeLayout>

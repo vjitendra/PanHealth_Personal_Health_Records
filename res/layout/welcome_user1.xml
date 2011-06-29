@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    android:id="@+id/widget54"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@drawable/background_1"
+    >
+
+<RelativeLayout 
+	 	xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent" 
+        android:layout_height="fill_parent"
+        android:padding="5px"
+        android:id="@+id/rLogin"
+    	android:background="@drawable/background_2"
+    	>
+
+	<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:id="@+id/l0"
+    android:paddingTop="10px"
+    android:gravity="right"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    >
+    	<Button 
+			android:id="@+id/logout" 
+			android:layout_height="wrap_content" 
+			android:layout_width="wrap_content"
+			android:background="@drawable/logout"
+			android:layout_gravity="right"
+			/> 
+	</LinearLayout>
+	
+	<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:id="@+id/l10"
+    android:layout_below="@id/l0"
+    android:gravity="left"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    >	
+	<TextView  
+			android:id="@+id/userID"
+   	 		android:layout_width="wrap_content" 
+    		android:layout_height="wrap_content"
+    		android:textColor="#000000"
+    		/>      
+    
+</LinearLayout>	
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:id="@+id/l1"
+     
+    android:layout_below="@id/l10"
+    android:gravity="center_vertical|center_horizontal"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    >
+ 
+ 			<TextView  
+		android:id="@+id/welcome"
+		android:layout_below="@id/l0"
+		android:layout_width="wrap_content" 
+    	android:layout_height="wrap_content"
+    	android:textStyle="bold"
+    	android:textColor="#000000"
+    	android:textSize="15px"
+   	 	android:text="Welcome"
+    	/>
+ 			 </LinearLayout>
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:id="@+id/l2"
+    android:paddingTop="10px"
+    android:layout_below="@id/l1"
+    android:gravity="center_vertical|center_horizontal"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    > 
+    
+    <RadioGroup
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:orientation="vertical">
+      	<RadioButton android:id="@+id/enter_data"
+          	android:layout_width="wrap_content"
+         	android:layout_height="wrap_content"
+          	android:text="Enter Data" 
+          	android:textColor="#000000"/>
+      	<RadioButton android:id="@+id/view_data"
+          	android:layout_width="wrap_content"
+          	android:layout_height="wrap_content"
+          	android:text="View local Data" 
+          	android:textColor="#000000"/>
+        <!--<RadioButton android:id="@+id/add_medication"
+          	android:layout_width="wrap_content"
+          	android:layout_height="wrap_content"
+          	android:text="Add new Medication" 
+          	android:textColor="#000000"/>  	
+        --><RadioButton android:id="@+id/sync_data"
+          	android:layout_width="wrap_content"
+          	android:layout_height="wrap_content"
+          	android:text="Sync Data to PanHealth" 
+          	android:textColor="#000000"/>
+    </RadioGroup>
+    
+</LinearLayout>
+</RelativeLayout>
+</ScrollView>

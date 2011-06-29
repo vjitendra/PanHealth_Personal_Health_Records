@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    android:id="@+id/widget54"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@drawable/background_1"
+    >
+<RelativeLayout 
+	 	xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent" 
+        android:layout_height="fill_parent"
+        android:padding="5px"
+        android:id="@+id/rLogin"
+    	android:background="@drawable/background_1"
+    	>
+
+	<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:id="@+id/l0"
+    android:paddingTop="10px"
+    android:gravity="right"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    >
+    	<Button 
+			android:id="@+id/back" 
+			android:layout_height="wrap_content" 
+			android:layout_width="wrap_content"
+			android:background="@drawable/back"
+			android:layout_gravity="right"
+			/> 
+	</LinearLayout>
+	<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:id="@+id/l10"
+    android:layout_below="@id/l0"
+    android:gravity="left"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    >	
+	<TextView  
+			android:id="@+id/userID"
+   	 		android:layout_width="wrap_content" 
+    		android:layout_height="wrap_content"
+    		android:textColor="#000000"
+    		/>      
+    
+</LinearLayout>	
+ 	<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:id="@+id/l1"
+    android:layout_below="@id/l10"
+    android:gravity="center_vertical|center_horizontal"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    >
+ <TextView  
+		android:id="@+id/name"
+		android:layout_below="@id/l0"
+		android:layout_width="wrap_content" 
+    	android:layout_height="wrap_content"
+    	android:textStyle="bold"
+    	android:textColor="#000000"
+    	android:textSize="15px"
+   	 	android:text="Select Option:"
+    	/>
+ 			 </LinearLayout>
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:id="@+id/l2"
+    android:layout_below="@id/l1"
+    android:gravity="center_vertical|center_horizontal"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    > 
+    
+    <RadioGroup
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:orientation="vertical">
+      <RadioButton android:id="@+id/glucose"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="Blood Glucose Log" 
+          android:textColor="#000000"/>
+      <RadioButton android:id="@+id/pressure"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="Blood Pressure Log" 
+          android:textColor="#000000"/>
+       <RadioButton android:id="@+id/weight"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="Personal Weight Log" 
+          android:textColor="#000000"/>   
+       <RadioButton android:id="@+id/HbA1c"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="HbA1c Log" 
+          android:textColor="#000000"/> 
+       <!--<RadioButton android:id="@+id/manual"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="Medication Manual Entry" 
+          android:textColor="#000000"/> 
+       --><RadioButton android:id="@+id/hemoglobin"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="Hemoglobin Log" 
+          android:textColor="#000000"/>
+          <RadioButton android:id="@+id/all"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="All Logs" 
+          android:textColor="#000000"/>       
+    </RadioGroup>
+    
+</LinearLayout>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:id="@+id/l8"
+    android:paddingTop="10px"
+    android:layout_below="@id/l2"
+    android:gravity="center_vertical|center_horizontal"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    >
+   <TextView 
+   		android:id="@+id/text" 
+   		android:layout_below="@id/l7"
+   		android:layout_width="wrap_content" 
+ 		android:layout_height="wrap_content"
+  		android:textColor="#000000" /> 
+ 
+        
+  </LinearLayout>
+</RelativeLayout>
+</ScrollView>

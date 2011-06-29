@@ -1,0 +1,512 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+    android:id="@+id/widget54"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@drawable/background_1"
+    >
+<RelativeLayout 
+	 	xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent" 
+        android:layout_height="fill_parent"
+        android:id="@+id/rLogin"
+        android:padding="5px"
+    	android:background="@drawable/background_2"
+    	>
+
+
+   <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:id="@+id/l0"
+    android:paddingTop="10px"
+    android:gravity="right"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    >
+    <Button 
+			android:id="@+id/back" 
+			android:layout_height="wrap_content" 
+			android:layout_width="wrap_content"
+			android:layout_gravity="right"
+			android:background="@drawable/back"
+			/> 
+	</LinearLayout>	
+	<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:id="@+id/l11"
+    android:layout_below="@id/l0"
+    android:gravity="left"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    >	
+	<TextView  
+			android:id="@+id/userID"
+   	 		android:layout_width="wrap_content" 
+    		android:layout_height="wrap_content"
+    		android:textColor="#000000"
+    		/>      
+    
+</LinearLayout>	
+	<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:id="@+id/l10"
+    android:layout_below="@id/l11"
+    android:gravity="left"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    >
+	<TextView  
+		android:id="@+id/name"
+		android:layout_width="wrap_content" 
+    	android:layout_height="wrap_content"
+    	android:textStyle="bold"
+    	android:paddingLeft="35px"
+    	android:gravity="center_vertical|center_horizontal"
+    	android:textColor="#000000"
+    	android:textSize="15px"
+   	 	android:text="Add new Medication"
+    	/>
+    	</LinearLayout>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:id="@+id/l3"
+    android:paddingTop="10px"
+    android:layout_below="@id/l10"
+    android:gravity="left"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    >
+    	<TextView
+			android:id="@+id/label"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:textColor="#000000"
+			android:text="Medicine Name: " />
+		<EditText 
+					android:layout_height="wrap_content" 
+					android:id="@+id/medi_name" 
+					android:typeface="serif"
+					android:layout_width="200px" 
+					/>	
+        
+    
+   </LinearLayout>
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:id="@+id/l4"
+    android:paddingTop="10px"
+    android:layout_below="@id/l3"
+    android:gravity="left"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    >
+			<TextView
+			android:id="@+id/label"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:textColor="#000000"
+			android:text="Comment: " />
+			<EditText 
+					android:layout_height="wrap_content" 
+					android:id="@+id/comment" 
+					android:typeface="serif"
+					android:layout_width="200px" 
+					/>	
+	</LinearLayout>
+	
+		<TextView
+			android:layout_below="@id/l4"
+			android:id="@+id/label1"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:textColor="#000000"
+			android:text="Select Frequency: " />
+	
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:id="@+id/l5"
+    android:paddingTop="10px"
+    android:layout_below="@id/label1"
+    android:gravity="left"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    >
+    
+    <RadioGroup
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:orientation="horizontal">
+      <RadioButton android:id="@+id/a1"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:checked="true"
+          android:text="1" 
+          android:textColor="#000000"/>
+      <RadioButton android:id="@+id/a2"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="2" 
+          android:textColor="#000000"/>
+       <RadioButton android:id="@+id/a3"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="3" 
+          android:textColor="#000000"/>   
+       <RadioButton android:id="@+id/a4"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="4" 
+          android:textColor="#000000"/> 
+       <RadioButton android:id="@+id/a5"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="5" 
+          android:textColor="#000000"/>
+        <RadioButton android:id="@+id/a6"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="6" 
+          android:textColor="#000000"/>       
+    </RadioGroup>
+    
+    	<!--<Button  
+     		android:id="@+id/one"  
+     		android:layout_gravity="center"
+     		android:layout_width="wrap_content"  
+     		android:layout_height="wrap_content"  
+     		android:text="1 time"
+     		/>
+     		<Button  
+     		android:id="@+id/two"  
+     		android:layout_gravity="center"
+     		android:layout_width="wrap_content"  
+     		android:layout_height="wrap_content"  
+     		android:text="2 times"
+     		/>
+			<Button  
+     		android:id="@+id/three"  
+     		android:layout_gravity="center"
+     		android:layout_width="wrap_content"  
+     		android:layout_height="wrap_content"  
+     		android:text="3 times"
+     		/>
+     		<Button  
+     		android:id="@+id/four"  
+     		android:layout_gravity="center"
+     		android:layout_width="wrap_content"  
+     		android:layout_height="wrap_content"  
+     		android:text="4 times"
+     		/>
+     		<Button  
+     		android:id="@+id/five"  
+     		android:layout_gravity="center"
+     		android:layout_width="wrap_content"  
+     		android:layout_height="wrap_content"  
+     		android:text="5 times"
+     		/>
+     		<Button  
+     		android:id="@+id/six"  
+     		android:layout_gravity="center"
+     		android:layout_width="wrap_content"  
+     		android:layout_height="wrap_content"  
+     		android:text="6 times"
+     		/>
+  --></LinearLayout>
+  
+  	<ImageButton
+  			   			android:layout_alignParentRight="true"
+  			   			android:layout_below="@id/l5"
+    					android:id="@+id/changeTime1"
+    					android:layout_width="wrap_content"
+    					android:layout_height="wrap_content"
+    					android:src="@drawable/clock4"
+    					android:background="#ffffff"
+    					/>
+  				<TextView
+  						android:layout_toLeftOf="@id/changeTime1" 
+  						android:layout_below="@id/l5"
+  						android:id="@+id/mTimeDisplay1" 
+        				android:layout_width="wrap_content" 
+       					android:layout_height="wrap_content" 
+        				android:typeface="serif"
+       		 			android:textColor="#000000"
+        				/>
+  				<TextView
+  						android:layout_toLeftOf="@id/mTimeDisplay1" 
+  						android:layout_below="@id/l5"
+						android:id="@+id/uitextbox1"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content" 
+						android:textColor="#000000"
+						android:text=" On "/>
+						
+ 				 <EditText
+ 				 		android:layout_toLeftOf="@id/uitextbox1" 
+  						android:layout_below="@id/l5"
+						android:id="@+id/medi1"
+						android:textColor="#000000"
+						android:numeric="decimal"
+						android:typeface="serif"
+						android:layout_width="fill_parent" 
+						android:layout_height="wrap_content" />
+				
+				
+				
+		<ImageButton
+						android:layout_alignParentRight="true"
+  			   			android:layout_below="@id/medi1"
+    					android:id="@+id/changeTime2"
+    					android:visibility="gone"
+    					android:layout_width="wrap_content"
+    					android:layout_height="wrap_content"
+    					android:src="@drawable/clock4"
+    					android:background="#ffffff"
+    					/>		
+						
+						<TextView 
+						android:layout_below="@id/medi1"
+						android:layout_toLeftOf="@id/changeTime2" 
+     					android:id="@+id/mTimeDisplay2"
+     					android:visibility="gone" 
+        				android:layout_width="wrap_content" 
+       					android:layout_height="wrap_content" 
+        				android:typeface="serif"
+       		 			android:textColor="#000000"
+        				/>
+        				<TextView
+        				android:layout_below="@id/medi1"
+        				android:layout_toLeftOf="@id/mTimeDisplay2" 
+						android:id="@+id/uitextbox2"
+						android:visibility="gone"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content" 
+						android:textColor="#000000"
+						android:text=" On "/>
+						
+						<EditText
+						android:layout_below="@id/medi1"
+						android:layout_toLeftOf="@id/uitextbox2" 
+						android:id="@+id/medi2"
+						android:textColor="#000000"
+						android:visibility="gone"
+						android:numeric="decimal"
+						android:typeface="serif"
+						android:layout_width="fill_parent" 
+						android:layout_height="wrap_content" />
+					
+					
+					
+						
+		<ImageButton
+						android:layout_alignParentRight="true"
+  			   			android:layout_below="@id/medi2"
+    					android:id="@+id/changeTime3"
+    					android:visibility="gone"
+    					android:layout_width="wrap_content"
+    					android:layout_height="wrap_content"
+    					android:src="@drawable/clock4"
+    					android:background="#ffffff"
+    					/>				
+						
+						<TextView android:id="@+id/mTimeDisplay3" 
+						android:layout_toLeftOf="@id/changeTime3" 
+						android:layout_below="@id/medi2"
+     					android:visibility="gone"
+        				android:layout_width="wrap_content" 
+       					android:layout_height="wrap_content" 
+        				android:typeface="serif"
+       		 			android:textColor="#000000"
+        				/>
+        				<TextView
+						android:id="@+id/uitextbox3"
+						android:layout_below="@id/medi2"
+						android:layout_toLeftOf="@id/mTimeDisplay3" 
+						android:visibility="gone"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content" 
+						android:textColor="#000000"
+						android:text=" On "/>
+						
+ 						<EditText
+						android:layout_toLeftOf="@id/uitextbox3" 
+						android:id="@+id/medi3"
+						android:layout_below="@id/medi2"
+						android:visibility="gone"
+						android:textColor="#000000"
+						android:numeric="decimal"
+						android:typeface="serif"
+						android:layout_width="fill_parent" 
+						android:layout_height="wrap_content" />
+                	
+
+     				
+  	 <ImageButton
+  	 					android:layout_alignParentRight="true"
+  			   			android:layout_below="@id/medi3"
+    					android:id="@+id/changeTime4"
+    					android:visibility="gone"
+    					android:layout_width="wrap_content"
+    					android:layout_height="wrap_content"
+    					android:src="@drawable/clock4"
+    					android:background="#ffffff"
+    					/>     			
+  
+  				<TextView 
+  						android:layout_below="@id/medi3"
+  						android:layout_toLeftOf="@id/changeTime4" 
+  						android:id="@+id/mTimeDisplay4" 
+        				android:layout_width="wrap_content" 
+        				android:visibility="gone"
+       					android:layout_height="wrap_content" 
+        				android:typeface="serif"
+       		 			android:textColor="#000000"
+        				/>
+					
+                	<TextView
+                	android:layout_below="@id/medi3"
+                	android:layout_toLeftOf="@id/mTimeDisplay4" 
+						android:id="@+id/uitextbox4"
+						android:layout_width="wrap_content"
+						android:visibility="gone"
+						android:layout_height="wrap_content" 
+						android:textColor="#000000"
+						android:text=" On "/>
+     				
+        			<EditText
+						android:layout_below="@id/medi3"
+						android:layout_toLeftOf="@id/uitextbox4" 
+						android:id="@+id/medi4"
+						android:visibility="gone"
+						android:textColor="#000000"
+						android:numeric="decimal"
+						android:typeface="serif"
+						android:layout_width="fill_parent" 
+						android:layout_height="wrap_content" />
+						
+					
+		<ImageButton
+						android:layout_alignParentRight="true"
+  			   			android:layout_below="@id/medi4"
+    					android:id="@+id/changeTime5"
+    					android:visibility="gone"
+    					android:layout_width="wrap_content"
+    					android:layout_height="wrap_content"
+    					android:src="@drawable/clock4"
+    					android:background="#ffffff"
+    					/>	
+  					
+  						<TextView 
+  						android:layout_below="@id/medi4"
+  						android:layout_toLeftOf="@id/changeTime5" 
+  						android:id="@+id/mTimeDisplay5" 
+        				android:layout_width="wrap_content" 
+        				android:visibility="gone"
+       					android:layout_height="wrap_content" 
+        				android:typeface="serif"
+       		 			android:textColor="#000000"
+        				/>
+        				
+        				<TextView
+        				android:layout_below="@id/medi4"
+        				android:layout_toLeftOf="@id/mTimeDisplay5" 
+						android:id="@+id/uitextbox5"
+						android:visibility="gone"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content" 
+						android:textColor="#000000"
+						android:text=" On "/>
+        				
+        				<EditText
+						android:layout_below="@id/medi4"
+						android:layout_toLeftOf="@id/uitextbox5" 
+						android:id="@+id/medi5"
+						android:visibility="gone"
+						android:textColor="#000000"
+						android:numeric="decimal"
+						android:typeface="serif"
+						android:layout_width="fill_parent" 
+						android:layout_height="wrap_content" />
+						
+	<ImageButton
+						android:layout_alignParentRight="true"
+  			   			android:layout_below="@id/medi5"
+    					android:id="@+id/changeTime6"
+    					android:visibility="gone"
+    					android:layout_width="wrap_content"
+    					android:layout_height="wrap_content"
+    					android:src="@drawable/clock4"
+    					android:background="#ffffff"
+    					/>
+						
+						<TextView 
+						android:layout_below="@id/medi5"
+						android:layout_toLeftOf="@id/changeTime6" 
+						android:id="@+id/mTimeDisplay6" 
+        				android:layout_width="wrap_content" 
+        				android:visibility="gone"
+       					android:layout_height="wrap_content" 
+        				android:typeface="serif"
+       		 			android:textColor="#000000"
+        				/>
+        				
+        				<TextView
+        				android:layout_below="@id/medi5"
+        				android:layout_toLeftOf="@id/mTimeDisplay6"
+						android:id="@+id/uitextbox6"
+						android:visibility="gone"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content" 
+						android:textColor="#000000"
+						android:text=" On "/>
+        				
+        				<EditText
+						android:layout_below="@id/medi5"
+						android:layout_toLeftOf="@id/uitextbox6" 
+						android:id="@+id/medi6"
+						android:visibility="gone"
+						android:textColor="#000000"
+						android:numeric="decimal"
+						android:typeface="serif"
+						android:layout_width="fill_parent" 
+						android:layout_height="wrap_content" />
+        				
+  
+  
+ 
+ <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:id="@+id/l7"
+    android:paddingTop="10px"
+    android:layout_below="@id/medi6"
+    android:gravity="center_vertical|center_horizontal"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    ><Button  
+     android:id="@+id/submit"  
+     android:layout_gravity="center"
+     android:layout_width="wrap_content"  
+     android:layout_height="wrap_content"  
+     android:background="@drawable/submit"
+     />
+     </LinearLayout>
+     <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:id="@+id/l8"
+    android:paddingTop="10px"
+    android:layout_below="@id/l7"
+    android:gravity="center_vertical|center_horizontal"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    >
+     
+     <TextView android:id="@+id/text1" 
+ 	android:layout_width="wrap_content" 
+ 	android:layout_height="fill_parent" 
+ 	android:layout_gravity="center"
+  	android:textColor="#000000" /> 
+
+	</LinearLayout>
+</RelativeLayout>
+</ScrollView>

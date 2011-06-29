@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="hello">Hello World, PersonalHealthRecord!</string>
+    <string name="app_name">PersonalHealthRecord</string>
+    <string name="register"><u>Click here to Register</u></string>
+    <string name="forgot_pws"><u>Forgot Password?</u></string>
+    <string name="click_offline"><u>Click here to work OffLine</u></string>
+</resources>
